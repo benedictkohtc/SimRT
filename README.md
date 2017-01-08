@@ -10,18 +10,14 @@ This game is essentially an urban mass rapid transit builder and simulator. Be w
 
 tldr: Deliver passengers by building train lines, decide how to deploy trains, don't let any station overload.
 
-Passengers are represented by little symbols and will alight at any station matching their symbol.
-
-You have 3 train lines and 5 trains available to you.
-
-Stations are considered overloaded when they have more than 6 passengers waiting on the platform.
-
-Stations will flash red when they are overloaded.
-
+Passengers are represented by little symbols and will alight at any station matching their symbol.<br>
+You have 3 train lines and 5 trains available to you.<br>
+Stations are considered overloaded when they have more than 6 passengers waiting on the platform.<br>
+Stations will flash red when they are overloaded.<br>
 The game ends when any station is overloaded for more than 10 seconds.
 
-**Building Tracks:** Click on grids to design your railway network, click again to confirm your network design.
-**Removing Trains:** Trains will first proceed to the next station to drop off all passengers before being removed from the system.
+**Building Tracks:** Click on grids to design your railway network, click again to confirm your network design.<br>
+**Removing Trains:** Trains will first proceed to the next station to drop off all passengers before being removed from the system.<br>
 **Destroying Lines:** All trains running on that line will automatically receive a "Remove Train" signal. A line has to be free of trains before you can destroy it.
 
 ### Game Bugs <sup>*thatwereturnedinto*</sup> Features

@@ -1,0 +1,73 @@
+UNLOAD and LOAD behavior with level 1 look ahead
+PASSENGERS ARE LAZY AND WILL ONLY MAKE ONE TRANSFER!!!
+* level 2 look ahead
+* needs ability to transfer ps from line to line
+
+UNLOAD
+
+if at normal station
+  unload if ps matches station
+
+if at only interchange
+  unload if ps matches station
+  unload if passenger cannot be serviced on this line
+
+if at an interchange
+  unload if ps matches station
+  unload if passenger is unserviceable on this line BUT can be serviced at this interchange
+
+  * unload if ps cannot be serviced by ANY interchange on this line, BUT this interchange will bring it to a station where ps can drop
+
+  LOAD
+
+  if at normal station
+    load all
+
+  if at only interchange
+    load ps that current line can service
+
+  if at an interchange
+    load ps that current line can service
+
+    *load ps that current line cannot service, interchange line cannot service, but another of my interchanges can service
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// code to iterate interchange list and lineColour list
+// originally in trainAtStationLogic() - unload prep section
+// // iterate through interchange list
+// $.each(lineAssetsMaster[this.trainLine + 'Line'].interchangeList, (function ( interchangeKey, interchangeValue ) {
+// 	console.log('interchangeKey is', interchangeKey, 'interchangeValue is', interchangeValue);
+//
+// 	// iterate through lineColours of each interchange
+// 	$.each(stationAssetsMaster['station' + interchangeValue].stationLinesArray, (function (lineColourKey, lineColourValue) {
+//
+// 		// if line is not the current line the train is on
+// 		if (lineColourValue !== this.trainLine) {
+// 			// get station type list
+//
+// 		// if passenger matches other lines, drop
+// 		if(lineAssetsMaster[lineColourValue + 'Line'].stationTypeList.indexOf(element) !==-1){
+//
+// 		}
+// 		}
+// 	// checkpoint
+// 	}).bind(this));
+// }).bind(this));
+
+// code to determine if this station is the only interchange
+// originally in trainLoadPrep()
+// if (Object.keys(lineAssetsMaster[this.trainLine + 'Line'].interchangeList).length === 1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+level 2 look ahead rough plan
+else there is more than 1 interchange
+    perform level 1 look ahead on intersection lines - pure line data, no interchange
+    if found
+        at current interchange, drop
+        at other interchange keep
+    else perform level 2 look ahead - only interchanges from level 1 data
+        if there is only 1 interchange found, drop towards it
+        else more than 1 interchange, compare their line data
+            if found, drop towards it
+            else drop towards first line that has an interchange
+
+    worse case scenario is a daisy chain consisting of all 6 lines, and the wanted station is actually not linked. In the above logic, the stuck passenger will remain in the center of the system, dropping towards the 3rd level interchange.

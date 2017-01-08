@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Game Stage Three</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="gameGridContainer">
+        <div id="gameGridCell_0" class="gameGridCell">
+            <div class="trackDisplayNW redTrainLine"></div>
+            <div class="trackDisplayNE redTrainLine"></div>
+            <div class="trackDisplaySW redTrainLine"></div>
+            <div class="trackDisplaySE redTrainLine"></div>
+            <p id="gameGridCellBanner_0">0</p>
+            <p id="station_0" class="trainStations">⬤ STATION </p>
+        </div>
+        <div id="gameGridCell_1" class="gameGridCell">
+            <div class="trackDisplayNW redTrainLine"></div>
+            <div class="trackDisplayNE redTrainLine"></div>
+            <div class="trackDisplaySW redTrainLine"></div>
+            <div class="trackDisplaySE redTrainLine"></div>
+            <p id="gameGridCellBanner_1">1</p>
+        </div>
+        <div id="gameGridCell_2" class="gameGridCell">
+            <div class="trackDisplayN redTrainLine"></div>
+            <div class="trackDisplayS redTrainLine"></div>
+            <div class="trackDisplayE redTrainLine"></div>
+            <div class="trackDisplayW redTrainLine"></div>
+            <div class="trackDisplayN navyTrainLine"></div>
+            <div class="trackDisplayS navyTrainLine"></div>
+            <div class="trackDisplayE navyTrainLine"></div>
+            <div class="trackDisplayW navyTrainLine"></div>
+            <div class="trackDisplayN orangeTrainLine"></div>
+            <div class="trackDisplayS orangeTrainLine"></div>
+            <div class="trackDisplayE orangeTrainLine"></div>
+            <div class="trackDisplayW orangeTrainLine"></div>
+            <p id="gameGridCellBanner_2">2</p>
+        </div>
+        <div id="gameGridCell_3" class="gameGridCell">
+            <div class="trackDisplayN redTrainLine"></div>
+            <div class="trackDisplayS redTrainLine"></div>
+            <div class="trackDisplayE redTrainLine"></div>
+            <div class="trackDisplayW redTrainLine"></div>
+            <div class="trackDisplayN navyTrainLine"></div>
+            <div class="trackDisplayS navyTrainLine"></div>
+            <div class="trackDisplayE navyTrainLine"></div>
+            <div class="trackDisplayW navyTrainLine"></div>
+            <div class="trackDisplayN orangeTrainLine"></div>
+            <div class="trackDisplayS orangeTrainLine"></div>
+            <div class="trackDisplayE orangeTrainLine"></div>
+            <div class="trackDisplayW orangeTrainLine"></div>
+            <p id="gameGridCellBanner_3">3</p>
+        </div>
+        <div id="gameGridCell_4" class="gameGridCell">
+            <div class="trackDisplayNW redTrainLine"></div>
+            <div class="trackDisplayNE redTrainLine"></div>
+            <div class="trackDisplaySW redTrainLine"></div>
+            <div class="trackDisplaySE redTrainLine"></div>
+            <div class="trackDisplayNW navyTrainLine"></div>
+            <div class="trackDisplayNE navyTrainLine"></div>
+            <div class="trackDisplaySW navyTrainLine"></div>
+            <div class="trackDisplaySE navyTrainLine"></div>
+            <div class="trackDisplayNW orangeTrainLine"></div>
+            <div class="trackDisplayNE orangeTrainLine"></div>
+            <div class="trackDisplaySW orangeTrainLine"></div>
+            <div class="trackDisplaySE orangeTrainLine"></div>
+            <p id="gameGridCellBanner_4">4</p>
+        </div>
+        <div id="gameGridCell_5" class="gameGridCell">
+            <div class="trackDisplayNW redTrainLine"></div>
+            <div class="trackDisplayNE redTrainLine"></div>
+            <div class="trackDisplaySW redTrainLine"></div>
+            <div class="trackDisplaySE redTrainLine"></div>
+            <div class="trackDisplayNW navyTrainLine"></div>
+            <div class="trackDisplayNE navyTrainLine"></div>
+            <div class="trackDisplaySW navyTrainLine"></div>
+            <div class="trackDisplaySE navyTrainLine"></div>
+            <div class="trackDisplayNW orangeTrainLine"></div>
+            <div class="trackDisplayNE orangeTrainLine"></div>
+            <div class="trackDisplaySW orangeTrainLine"></div>
+            <div class="trackDisplaySE orangeTrainLine"></div>
+            <p id="gameGridCellBanner_5">5</p>
+        </div>
+        <div id="gameGridCell_6" class="gameGridCell">
+            <div class="trackDisplayN redTrainLine"></div>
+            <div class="trackDisplayS redTrainLine"></div>
+            <div class="trackDisplayE redTrainLine"></div>
+            <div class="trackDisplayW redTrainLine"></div>
+            <div class="trackDisplayNW navyTrainLine"></div>
+            <div class="trackDisplayNE navyTrainLine"></div>
+            <div class="trackDisplaySW navyTrainLine"></div>
+            <div class="trackDisplaySE navyTrainLine"></div>
+            <p id="gameGridCellBanner_6">6</p>
+        </div>
+        <div id="gameGridCell_7" class="gameGridCell">
+            <div class="trackDisplayN redTrainLine"></div>
+            <div class="trackDisplayS redTrainLine"></div>
+            <div class="trackDisplayE redTrainLine"></div>
+            <div class="trackDisplayW redTrainLine"></div>
+            <p id="gameGridCellBanner_7">7</p>
+        </div>
+        <div id="gameGridCell_8" class="gameGridCell">
+            <div class="trackDisplayE redTrainLine"></div>
+            <div class="trackDisplayE orangeTrainLine"></div>
+            <div class="trackDisplayW redTrainLine"></div>
+            <div class="trackDisplayW orangeTrainLine"></div>
+            <p id="gameGridCellBanner_8">8</p>
+        </div>
+        <div id="gameGridCell_9" class="gameGridCell">
+            <div class="trackDisplayE redTrainLine"></div>
+            <div class="trackDisplayE orangeTrainLine"></div>
+            <div class="trackDisplayW redTrainLine"></div>
+            <div class="trackDisplayW orangeTrainLine"></div>
+            <p id="gameGridCellBanner_9">9</p>
+            <p id="station_9" class="trainStations">▲ STATION </p>
+        </div>
+        <div id="gameGridCell_10" class="gameGridCell">
+            <p id="gameGridCellBanner_10">10</p>
+            <p id="station_10" class="trainStations">⬛ STATION </p>
+        </div>
+        <div id="gameGridCell_11" class="gameGridCell">
+            <p id="gameGridCellBanner_11">11</p>
+        </div>
+        <div id="gameGridCell_12" class="gameGridCell">
+            <p id="gameGridCellBanner_12">12</p>
+        </div>
+        <div id="gameGridCell_13" class="gameGridCell">
+            <p id="gameGridCellBanner_13">13</p>
+        </div>
+        <div id="gameGridCell_14" class="gameGridCell">
+            <p id="gameGridCellBanner_14">14</p>
+        </div>
+
+    </div>
+    <button id="STOP">STAPH</button>
+    <button id="newTrain">MOAR TRAIN</button>
+    <button id="removeTrain">REMOVE TRAIN</button>
+    <button id="buildTrack">BUILD TRACKS</button>
+    <button id="clearAllTracks">OBLITERATE EVERYTHING</button>
+
+
+</body>
+
+</html>

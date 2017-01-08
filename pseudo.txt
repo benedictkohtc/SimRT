@@ -1,0 +1,70 @@
+
+predeclarables
+event listeners start
+arrays/objects start
+trackScanningPatternGenerator()
+stationAssetsMasterObject
+function Line
+function Train
+trainMovementLogic()
+trainAtStationLogic()
+generatePassengers()
+generateStations()
+
+
+
+
+
+
+
+<< progress bar >>
+
+
+
+
+urban background?
+set all event listeners, but hide them until unlocked.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+http://www.fileformat.info/info/unicode/block/index.htm
+
+console.log('\u2B24')   //BLACK LARGE CIRCLE
+console.log('\u25B2')   //BLACK UP-POINTING TRIANGLE
+console.log('\u2B1B')   //BLACK LARGE SQUARE
+
+console.log('\u25C6')   //BLACK DIAMOND
+console.log('\u271A')   //HEAVY GREEK CROSS
+console.log('\u2605')   //BLACK STAR
+console.log('\u2716')   //HEAVY MULTIPLICATION X
+
+console.log('\u2600')   //BLACK SUN WITH RAYS
+console.log('\u26EC')   //HISTORIC SITE
+console.log('\u2B1F')   //BLACK PENTAGON
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined

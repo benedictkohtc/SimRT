@@ -2,7 +2,7 @@
 
 This game has been heavily inspired by a particular indie title which shall go unnamed <sup>*plsdontsuemeIhavenomoney*</sup>. As such I take no credit for its awesome simple-to-play yet hard-to-master game mechanics and minimalistic design.
 
-I wanted to build something that I myself wanted to play. And just to really push myself and see how far I could go. Everything you see here is pure html, css and javascript with JQuery.
+I wanted to build something that I myself wanted to play. And just to really push myself and see how far I could go. Everything you see here is pure HTML, CSS and Javascript with JQuery.
 
 This game is essentially an urban mass rapid transit builder and simulator. Be warned! You will never look at another railway map the same way again.
 
@@ -21,17 +21,15 @@ The game ends when any station is overloaded for more than 10 seconds.
 **Destroying Lines:** All trains running on that line will automatically receive a "Remove Train" signal. A line has to be free of trains before you can destroy it.
 
 ### Game Bugs <sup>*thatwereturnedinto*</sup> Features
-**1) Passengers will only make a maximum of 1 transfer.**
-
+**1) Passengers will only make a maximum of 1 transfer.**<br>
 This means that passengers will only take a maximum of 2 lines to reach their destination.
 
-*Passengers in this urban metropolis have high expectations of their transport systems. They expect to be taken to their desired destination quickly and efficiently*
+> *Passengers in this urban metropolis have high expectations of their transport systems. They expect to be taken to their desired destination quickly and efficiently*
 
-**2) You may only extend existing lines on the end with the coloured block.**
-
+**2) You may only extend existing lines on the end with the coloured block.**<br>
 The block represents the tunnel boring machine(TBM) used to create the subway tunnel. Remember that you can destroy existing lines to rebuild them from scratch.
 
-*TBMs are sometimes left behind simply because it is cost prohibitive to excavate them out - fortunately it allows us to expand our subway network at will!*
+> *TBMs are sometimes left behind simply because it is cost prohibitive to excavate them out - fortunately it allows us to expand our subway network at will!*
 
 ## Live Version
 

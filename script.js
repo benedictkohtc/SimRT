@@ -1050,7 +1050,7 @@ function checkStationOverload () {
 				clearTimeout(trainLoadCycleTimeout);
 
 				$('body').empty();
-				$('body').append('<div id="gameover">GAME OVER<br> You successfully transported ' + passengersDelivered + ' passengers!</div>');
+				$('body').append('<div id="gameover">GAME OVER!<br>A station was overloaded for too long ):<br> You successfully transported ' + passengersDelivered + ' passengers!</div>');
 			}
 		}
 	});

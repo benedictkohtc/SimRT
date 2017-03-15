@@ -276,7 +276,8 @@ var stationAssetsMasterObject = {
 		stationType: '\u2B24',
 		stationStatus: 'active',
 		stationLinesArray: [],
-	stationPassengerList: []},
+		stationPassengerList: []
+	},
 	'station54': {
 		stationGridLocation: 54,
 		stationTypePlaintext: 'triangle',
@@ -957,23 +958,26 @@ function generatePassengers () {
 		if (value.stationStatus === 'active') {
 			var genPassRNG = Math.floor(Math.random() * 10 + 1);// RNG 1 to 10
 			if (genPassRNG > 9) {
-				// if station is square, equal probability of circle or triangle
-				if (value.stationTypePlaintext === 'square') {
-					var genPassTypeRNG = Math.floor(Math.random() * 2 + 1);// RNG 1 to 2
-					if (genPassTypeRNG === 1) value.stationPassengerList.push('\u2B24'); // push in circle passenger
-					else value.stationPassengerList.push('\u25B2'); // push in triangle passenger
-				}
-				// if station is circle, 20% probability of square, else triangle
-				else if (value.stationTypePlaintext === 'circle') {
-					var genPassTypeRNG = Math.floor(Math.random() * 5 + 1);// RNG 1 to 5
-					if (genPassTypeRNG === 1) value.stationPassengerList.push('\u2B1B'); // push in square passenger
-					else value.stationPassengerList.push('\u25B2'); // push in triangle passenger
-				}
-				// if station is triangle, 20% probability of square, else circle
-				else if (value.stationTypePlaintext === 'triangle') {
-					var genPassTypeRNG = Math.floor(Math.random() * 5 + 1);// RNG 1 to 5
-					if (genPassTypeRNG === 1) value.stationPassengerList.push('\u2B1B'); // push in square passenger
-					else value.stationPassengerList.push('\u2B24'); // push in circle passenger
+				// only generate if station has less than 10 passengers
+				if (value.stationPassengerList.length < 10) {
+					// if station is square, equal probability of circle or triangle
+					if (value.stationTypePlaintext === 'square') {
+						var genPassTypeRNG = Math.floor(Math.random() * 2 + 1);// RNG 1 to 2
+						if (genPassTypeRNG === 1) value.stationPassengerList.push('\u2B24'); // push in circle passenger
+						else value.stationPassengerList.push('\u25B2'); // push in triangle passenger
+					}
+					// if station is circle, 20% probability of square, else triangle
+					else if (value.stationTypePlaintext === 'circle') {
+						var genPassTypeRNG = Math.floor(Math.random() * 5 + 1);// RNG 1 to 5
+						if (genPassTypeRNG === 1) value.stationPassengerList.push('\u2B1B'); // push in square passenger
+						else value.stationPassengerList.push('\u25B2'); // push in triangle passenger
+					}
+					// if station is triangle, 20% probability of square, else circle
+					else if (value.stationTypePlaintext === 'triangle') {
+						var genPassTypeRNG = Math.floor(Math.random() * 5 + 1);// RNG 1 to 5
+						if (genPassTypeRNG === 1) value.stationPassengerList.push('\u2B1B'); // push in square passenger
+						else value.stationPassengerList.push('\u2B24'); // push in circle passenger
+					}
 				}
 
 				$('#gameGridCell_' + value.stationGridLocation + ' .stationPlatform').text(value.stationPassengerList.join(' '));

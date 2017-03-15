@@ -42,29 +42,3 @@ console.log('\u2716')   //HEAVY MULTIPLICATION X
 console.log('\u2600')   //BLACK SUN WITH RAYS
 console.log('\u26EC')   //HISTORIC SITE
 console.log('\u2B1F')   //BLACK PENTAGON
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined

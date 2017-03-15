@@ -1,4 +1,4 @@
-# The Overglorified Screensaver
+# SimRT
 
 This game has been heavily inspired by a particular indie title which shall go unnamed <sup>*plsdontsuemeIhavenomoney*</sup>. As such I take no credit for its awesome simple-to-play yet hard-to-master game mechanics and minimalistic design.
 
@@ -33,4 +33,4 @@ The block represents the tunnel boring machine(TBM) used to create the subway tu
 
 ## Live Version
 
-https://benedictkohtc.github.io/WDI-Project1/
+https://benedictkohtc.github.io/SimRT

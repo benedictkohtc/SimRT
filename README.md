@@ -6,7 +6,9 @@ I wanted to build something that I myself wanted to play. And just to really pus
 
 This game is essentially an urban mass rapid transit builder and simulator. Be warned! You will never look at another railway map the same way again.
 
-*Note: In its current form, gameplay can be quite punishing. You may wish to disable the lose condition so as to fully explore the complete depth of the game at leisure. You can do so by clicking the "You Didn't See Anything" button at the bottom of the build menu, followed by the "Lose Condition" toggle.*
+<span style="color:red">
+In its current form, gameplay can be quite punishing. You may wish to disable the lose condition so as to fully explore the complete depth of the game at leisure. You can do so by clicking the "You Didn't See Anything" button at the bottom of the build menu, followed by the "Lose Condition" toggle.
+</span>
 
 ## How to Play
 
